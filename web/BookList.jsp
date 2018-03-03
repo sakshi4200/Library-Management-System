@@ -7,17 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
     <title>Insert title here</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-<script>
-    function getCardId() {
-       popitup("getBorrowerId.jsp")
-    }
 
-    function popitup(url) {
-        newwindow=window.open(url,'name','height=200,width=150');
-        if (window.focus) {newwindow.focus()}
-        return false;
-    }
-    </script>
 
 </head>
 <body>
@@ -52,7 +42,10 @@
             <td>${book.isbn}</td>
             <td>${book.title}</td>
             <td>${book.author}</td>
-            <td> <button class="btn btn-primary" onclick="getCardId()"> ${book.available}</button></td>
+            <s:form  class="form-inline" action="BookBorrow" method="post">
+            <s:hidden key="isbn" value="%{book.isbn}"/>
+            <td> <button class="btn btn-primary" key="submit" value="%${book.available}"> </button></td>
+            </s:form>
         </tr>
     </s:iterator>
 </table>

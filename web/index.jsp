@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="#">Library Management System</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Create Borower</a></li>
+      <li><a href="#">Create Borrower</a></li>
     </ul>
   </div>
 </nav>

@@ -14,8 +14,10 @@
             <result>/index.jsp</result>
         </action>
     <action name="BookSearch" class="com.library.actions.BookAction" method="BookSearch">
-        <result name="success">BookList.jsp</result>
+        <result name="success">/BookList.jsp</result>
     </action>
-
+        <action name="BookBorrow" class="com.library.actions.BookBorrowAction" method="getBorrowerId">
+            <result name="success">getBorrowerId.jsp</result>
+        </action>
 </package>
 </struts>
