@@ -4,9 +4,10 @@ public class Book {
 
     private String isbn;
     private String title;
-    private String cover;
+    private String author;
     private String publisher;
     private int pages;
+    private String available;
 
 
     public String getIsbn() {
@@ -25,12 +26,12 @@ public class Book {
         this.title = title;
     }
 
-    public String getCover() {
-        return cover;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setCover(String cover) {
-        this.cover = cover;
+    public void setAuthor(String cover) {
+        this.author = cover;
     }
 
     public String getPublisher() {
@@ -47,5 +48,13 @@ public class Book {
 
     public void setPages(int pages) {
         this.pages = pages;
+    }
+
+    public String getAvailable() {
+        return available;
+    }
+
+    public void setAvailable(String available) {
+        this.available = available;
     }
 }
