@@ -5,13 +5,10 @@
 
     <style type="text/css">
         .welcome {
-            background-color:#DDFFDD;
-            border:1px solid #009900;
-            width:200px;
+            color:darkslategrey;
         }
-        .welcome {
-            background-color:Red;
-            width:200px;
+        .error {
+            color:Red;
         }
         .welcome li{
             list-style: none;
