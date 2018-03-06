@@ -19,5 +19,29 @@
         <action name="BookBorrow" class="com.library.actions.BookBorrowAction" method="getBorrowerId">
             <result name="success">getBorrowerId.jsp</result>
         </action>
+        <action name="ReturnThisBook" class="com.library.actions.BookBorrowAction" method="returnThisBook">
+            <result name="success">index.jsp</result>
+        </action>
+
+        <action name="IssueBook" class="com.library.actions.BookBorrowAction" method="issueBook">
+            <result name="success">getBorrowerId.jsp</result>
+        </action>
+
+        <action name="ReturnBook" class="com.library.actions.BookBorrowAction" method="returnBook">
+            <result name="success">returnBookList.jsp</result>
+        </action>
+        <action name="CreateBorrower" class="com.library.actions.BorrowerAction" method="createBorrower">
+            <result name="success">CreateBorrower.jsp</result>
+        </action>
+        <action name="CheckFine" class="com.library.actions.BorrowerAction" method="checkFine">
+            <result name="success">checkFine.jsp</result>
+        </action>
+        <action name="PayFine" class="com.library.actions.BorrowerAction" method="payFine">
+            <result name="success">payFine.jsp</result>
+        </action>
+
+
+
+
 </package>
 </struts>
