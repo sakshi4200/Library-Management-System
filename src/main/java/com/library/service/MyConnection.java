@@ -1,28 +1,29 @@
 package com.library.service;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 
-public class Connection {
+public class MyConnection {
 
 
-    private  Connection connection;
+    private Connection myConnection;
 
     public Connection getConnection() {
-        if(connection == null)
+        if(myConnection == null)
         {try {
-            connection = conn();
+            myConnection = conn();
         }
         catch(Exception e)
         {
-
+            e.printStackTrace();
         }
         }
 
-        return connection;
+        return myConnection;
     }
 
     public void setConnection(Connection connection) {
-        this.connection = connection;
+        this.myConnection = connection;
     }
 
     private java.sql.Connection conn() throws Exception {
